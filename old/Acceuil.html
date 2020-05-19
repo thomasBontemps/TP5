@@ -38,29 +38,55 @@
 <body id="accueil">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h2 class="display-4">Mon super site</h2>
-      <p class="lead">Bonjour et bienvenue sur mon site !</p>
-      <p class="lead">Pour le moment, mon site est un peu <em>vide</em>. Patientez encore un peu !</p>
+      
+      <h1 class="display-4"><span class="material-icons">
+        apps
+      </span>Moniteur d'activités</h1>
+      <p class="lead">Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportives ou encore sur votre sommeil.</p>
     </div>
   </div>
-  
+  <style>
+    ul{
+      list-style: none;
+    }
+  </style>
 </body>
 </html>
   </head>
   <body>
-    <!-- Header -->
-    
-    <h1>Moniteur d'activités</h1>
-    <p>
-      Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportives ou encore sur votre sommeil.
-    </p>
-    <hr />
-
-    <!-- Topics -->
-    <ul>
-      <li><strong>Nourriture :</strong> Suivez vos repas : heure, type, quantité, calories... <a href="#nourriture">voir plus</a></li>
-      <li><strong>Sport :</strong> Quelles activités avez-vous pratiquées aujourd'hui ? <a href="#sport">voir plus</a></li>
-      <li><strong>Sommeil :</strong> Dormez-vous assez ? Suivez la qualité de votre sommeil. <a href="#sommeil">voir plus</a></li>
-      <li><strong>Blog :</strong> Où êtes vous allé ? Suivez votre activité en image ! <a href="#blog">voir plus</a></li>
-    </ul>
+    <ul >
+      <div class="card">
+        <div class="row justify-content-around">
+            <div class="col-sm-3" > <li>
+              <img src="img/nourriture.jpg" class="card-img-top" alt="Card image cap"></img>
+              <span class="material-icons">
+              fastfood
+              </span><strong>Nourriture : <br>
+              </strong> Suivez vos repas : heure, type, quantité, calories... <br>
+              <button type="button" class="btn btn-primary"><a href="#nourriture" style="color:white">voir plus</a></button></li>
+            </div>
+            <div class="col-sm-3" ><li>
+              <img src="img/sport.jpg"  class="card-img-top"></img>
+              <span class="material-icons">
+              sports
+              </span><strong>Sport : <br></strong> Quelles activités avez-vous pratiquées aujourd'hui ? <br>
+              <button type="button" class="btn btn-primary"><a href="#sport" style="color:white">voir plus</a></button></li>
+            </div>
+            <div class="col-sm-3" > <li>
+              <img src="img/sommeil.jpg"  class="card-img-top"></img>
+              <span class="material-icons">
+              timeline
+              </span><strong>Sommeil : <br></strong> Dormez-vous assez ? Suivez la qualité de votre sommeil. <br>
+              <button type="button" class="btn btn-primary"><a href="#sommeil" style="color:white">voir plus</a></button></li>
+            </div>
+            <div class="col-sm-3" > <li>
+              <img src="img/photos.jpg"  class="card-img-top"></img>
+              <span class="material-icons">
+              add_a_photo
+              </span><strong>Blog : <br></strong> Où êtes vous allé ? Suivez votre activité en image ! <br>
+              <button type="button" class="btn btn-primary"><a href="#blog" style="color:white">voir plus</a></button></li>
+        </ul></div>
+        </div>
+        
+      
     <hr />
