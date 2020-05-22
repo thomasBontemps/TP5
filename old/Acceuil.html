@@ -12,7 +12,7 @@
     <!DOCTYPE html>
 <html>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="Acceuil.html">Acceuil</a>
+    <a class="navbar-brand" href="Acceuil.html">Accueil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,59 +34,81 @@
   <head>
     <meta charset="utf-8" />
     <title>Premiers tests du CSS</title>
+    <dd>
 </head>
-<body id="accueil">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      
-      <h1 class="display-4"><span class="material-icons">
-        apps
-      </span>Moniteur d'activités</h1>
-      <p class="lead">Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportives ou encore sur votre sommeil.</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10">
+      <body id="accueil">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            
+            <h1 class="display-4"><span class="material-icons">
+              apps
+            </span>Moniteur d'activités</h1>
+            <p class="lead">Bienvenue sur notre outil de suivi d'activités. Visualisez les statistiques sur vos repas, vos activités sportives ou encore sur votre sommeil.</p>
+          </div>
+        </div>
+        <style>
+          ul{
+            list-style: none;
+          }
+        </style>
+      </body> 
     </div>
   </div>
-  <style>
-    ul{
-      list-style: none;
-    }
-  </style>
-</body>
+</div>
 </html>
   </head>
   <body>
-    <ul >
-      <div class="card">
-        <div class="row justify-content-around">
-            <div class="col-sm-3" > <li>
-              <img src="img/nourriture.jpg" class="card-img-top" alt="Card image cap"></img>
-              <span class="material-icons">
-              fastfood
-              </span><strong>Nourriture : <br>
-              </strong> Suivez vos repas : heure, type, quantité, calories... <br>
-              <button type="button" class="btn btn-primary"><a href="#nourriture" style="color:white">voir plus</a></button></li>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <ul >
+            <div class="card">
+              <div class="row justify-content">
+                  <div class="col-sm-3" > <li>
+                    <img src="img/nourriture.jpg" class="card-img-top" alt="Card image cap"></img>
+                    <p class="card-title">
+                    <span class="material-icons">
+                    fastfood
+                    </span>
+                    <strong>Nourriture : </strong></p>
+                    <p class="card-text"> Suivez vos repas : heure, type, quantité, calories... <br></p>
+                    <button type="button" class="btn btn-primary"><a href="#nourriture" style="color:white">voir plus</a></button></li>
+                  </div>
+                  <div class="col-sm-3" ><li>
+                    <img src="img/sport.jpg"  class="card-img-top"></img>
+                    <p class="card-title">
+                    <span class="material-icons">
+                    sports
+                    </span><strong>Sport : <br></strong></p> 
+                    <p class="card-text">Quelles activités avez-vous pratiquées aujourd'hui ?</p> <br>
+                    <button type="button" class="btn btn-primary"><a href="#sport" style="color:white">voir plus</a></button></li>
+                  </div>
+                  <div class="col-sm-3" > <li>
+                    <img src="img/sommeil.jpg"  class="card-img-top"></img>
+                    <p class="card-title">
+                    <span class="material-icons">
+                    timeline
+                    </span><strong>Sommeil : <br></strong></p> 
+                    <p class="card-text">Dormez-vous assez ? Suivez la qualité de votre sommeil.</p> <br>
+                    <button type="button" class="btn btn-primary"><a href="#sommeil" style="color:white">voir plus</a></button></li>
+                  </div>
+                  <div class="col-sm-3" > <li>
+                    <img src="img/photos.jpg"  class="card-img-top"></img>
+                    <p class="card-title">
+                    <span class="material-icons">
+                    add_a_photo
+                    </span><strong>Blog : <br></strong></p> 
+                    <p class="card-text">Où êtes vous allé ? Suivez votre activité en image !</p> <br>
+                    <button type="button" class="btn btn-primary"><a href="#blog" style="color:white">voir plus</a></button></li>
+              </ul>
             </div>
-            <div class="col-sm-3" ><li>
-              <img src="img/sport.jpg"  class="card-img-top"></img>
-              <span class="material-icons">
-              sports
-              </span><strong>Sport : <br></strong> Quelles activités avez-vous pratiquées aujourd'hui ? <br>
-              <button type="button" class="btn btn-primary"><a href="#sport" style="color:white">voir plus</a></button></li>
-            </div>
-            <div class="col-sm-3" > <li>
-              <img src="img/sommeil.jpg"  class="card-img-top"></img>
-              <span class="material-icons">
-              timeline
-              </span><strong>Sommeil : <br></strong> Dormez-vous assez ? Suivez la qualité de votre sommeil. <br>
-              <button type="button" class="btn btn-primary"><a href="#sommeil" style="color:white">voir plus</a></button></li>
-            </div>
-            <div class="col-sm-3" > <li>
-              <img src="img/photos.jpg"  class="card-img-top"></img>
-              <span class="material-icons">
-              add_a_photo
-              </span><strong>Blog : <br></strong> Où êtes vous allé ? Suivez votre activité en image ! <br>
-              <button type="button" class="btn btn-primary"><a href="#blog" style="color:white">voir plus</a></button></li>
-        </ul></div>
         </div>
-        
-      
+      </div>
+  
+      </dd> 
     <hr />
