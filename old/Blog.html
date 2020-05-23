@@ -30,28 +30,57 @@
       </div>
     </div>
   </nav>
+
+
   <head>
       <meta charset="utf-8" />
       <title>Premiers tests du CSS</title>
   </head>
 
-  <div id="blog">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+  <div class="container-fluid" style="justify-content : space-between;">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
         <h2 class="display-4">Photos - cliquez pour les voir en grand</h2>
       </div>
     </div>
-    <img src="img/nourriture.jpg" alt="Nourriture" width="100px" />
-    <strong>Premier repas de la journée :</strong> Petit déjeuner à base de légumes et fruits frais.
-    <br />
-    <img src="img/sport.jpg" alt="Sport" width="100px" />
-    <strong>Petit footing du matin :</strong> 7km en bord de mer avec un petit vent d'ouest.
-    <br />
-    <img src="img/sommeil.jpg" alt="Sommeil" width="100px" />
-    <strong>La journée qui commence :</strong> Réveil à 7h15 de bon pied et en route pour une nouvelle journée bien chargée.
-    <br />
-    <img src="img/photos.jpg" alt="Photos" width="100px" />
-    <strong>Shooting photos :</strong> Pause de midi en campagne pour capturer la nature avec mon appareil.
+
+    <div class="container-fluid" style="justify-content : space-between;">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <ul class="list-unstyled">
+            <li class="media">
+              <img class="mr-3" src="img/nourriture.jpg" alt="Generic placeholder image" id="photo1" width="80" onClick="document.getElementById('photo1').style.width='400px';">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Premier repas de la journée :</h5>
+                Petit déjeuner à base de légumes et fruits frais.
+              </div>
+            </li>
+            <li class="media my-4">
+              <img class="mr-3" src="img/sport.jpg" alt="Generic placeholder image" id="photo2" width="80" onClick="document.getElementById('photo2').style.width='400px';">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Petit footing du matin :</h5>
+                7km en bord de mer avec un petit vent d'ouest.
+              </div>
+            </li>
+            <li class="media">
+              <img class="mr-3" src="img/sommeil.jpg" alt="Generic placeholder image" id="photo3" width="80" onClick="document.getElementById('photo3').style.width='400px';">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">La journée qui commence :</h5>
+                Réveil à 7h15 de bon pied et en route pour une nouvelle journée bien chargée.
+              </div>
+              <li class="media">
+                <img class="mr-3" src="img/photos.jpg" id="photo4" width="80" onClick="document.getElementById('photo4').style.width='400px';" alt="Generic placeholder image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Shooting photos :</h5>
+                  Pause de midi en campagne pour capturer la nature avec mon appareil.
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
   <hr />
 </body>

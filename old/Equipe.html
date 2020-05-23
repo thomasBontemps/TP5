@@ -34,27 +34,54 @@
       <meta charset="utf-8" />
       <title>Premiers tests du CSS</title>
   </head>
-  <div id="team">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h2 class="display-4">L'équipe de développement</h2>
+
+  <div class="container-fluid" style="justify-content : space-between;">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
+        <h2>L'équipe de développement</h2>
       </div>
     </div>
-    <img src="img/berners-lee.jpg" alt="Tim Berners-Lee" width="100px" />
-    <strong>Tim Berners-Lee :</strong> Programmeur HTML
-    <br />
-    <img src="img/lie.jpg" alt="Håkon Wium Lie" width="100px" />
-    <strong class="text-center">Håkon Wium Lie :</strong> Programmeur CSS
-    <br />
-    <img src="img/eich.jpg" alt="Brendan Eich" width="100px" />
-    <strong class="text-center">Brendan Eich :</strong> Programmeur JS
-    <br />
-    <img src="img/lerdorf.jpg" alt="Rasmus Lerdorf" width="100px" />
-    <strong class="text-center">Rasmus Lerdorf :</strong> Programmeur PHP
-    <br />
-    <img src="img/chamberlin.jpg" alt="Donald Chamberlin" width="100px" />
-    <strong class="text-center">Donald Chamberlin :</strong> Programmeur SQL
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/berners-lee.jpg" class="rounded-circle" alt="Tim Berners-Lee" width="100px" /> <br>
+            <h5 class="card-title">Tim Berners-Lee :</h5> 
+            <h6 class="card-title">Programmeur HTML</h6>
+            
+          </div>
+          <div class="col-sm-4">
+            <img src="img/lie.jpg" class="rounded-circle" alt="Håkon Wium Lie" width="100px" />
+            <br />
+            <h5 class="text-title">Håkon Wium Lie :</h5> 
+            <h6 class="text-title">Programmeur CSS</h6> 
+          </div>
+          <div class="col-sm-4">
+            <img src="img/eich.jpg" class="rounded-circle" alt="Brendan Eich" width="100px" />
+            <br />
+            <h5 class="text-title">Brendan Eich :</h5>
+            <h6 class="text-title">Programmeur JS     </h6>    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <img src="img/lerdorf.jpg" class="rounded-circle" alt="Rasmus Lerdorf" width="100px" />
+            <br />
+            <h5 class="text-title">Rasmus Lerdorf :</h5>
+            <h6 class="text-title">Programmeur PHP   </h6>      
+          </div>
+          <div class="col-sm-4">
+            <img src="img/chamberlin.jpg" class="rounded-circle"alt="Donald Chamberlin" width="100px" />
+            <br />
+            <h5 class="text-title">Donald Chamberlin :</h5>
+            <h6 class="text-title">Programmeur SQL</h6> 
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
-  <hr />
-</body>
 </html>
