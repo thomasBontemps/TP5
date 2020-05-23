@@ -34,37 +34,70 @@
       <meta charset="utf-8" />
       <title>Premiers tests du CSS</title>
   </head>
-  <div id="sommeil">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+
+  <div class="container-fluid" style="justify-content : space-between;">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
         <h2 class="display-4">Sommeil - vérifiez votre repos</h2>
       </div>
     </div>
-    J - 3
-    <ul>
-      <li>4h : Sommeil profond</li>
-      <li>30m : Sommeil léger</li>
-      <li>1h : Sommeil profond</li>
-      <li>30m : Phase de réveil</li>
-      <li>1h : Sommeil léger</li>
-    </ul>
-    J - 2
-    <ul>
-      <li>3h30 : Sommeil profond</li>
-      <li>1h : Sommeil léger</li>
-      <li>30m : Phase de réveil</li>
-      <li>1h : Sommeil léger</li>
-      <li>2h30 : Sommeil profond</li>
-      <li>30m : Sommeil léger</li>
-    </ul>
-    J - 1
-    <ul>
-      <li>2h : Sommeil léger</li>
-      <li>3h : Phase de réveil</li>
-      <li>2h : Sommeil léger</li>
-      <li>1h : Sommeil profond</li>
-    </ul>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col">
+        <div class="card"></div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">J - 3 <br>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 32%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"> 4h</div>
+              <div class="progress-bar" role="progressbar" style="width: 4%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">30min</div>
+              <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1h</div>
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 4%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">30min</div>
+              <div class="progress-bar " role="progressbar" style="width: 8%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1h</div>
+            </div>
+          </li>
+          <li class="list-group-item">J - 2 <br>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 29%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"> 3h30</div>
+              <div class="progress-bar " role="progressbar" style="width: 8%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1h</div>
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 4%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">30min</div>
+              <div class="progress-bar " role="progressbar" style="width: 8%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1h</div>
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">2h30</div>
+              <div class="progress-bar " role="progressbar" style="width: 8%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1h</div>
+            </div>
+          </li>
+          <li class="list-group-item">J - 1 <br>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 16%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"> 2h</div>
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 24%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">3h</div>
+              <div class="progress-bar " role="progressbar" style="width: 16%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">2h</div>
+              <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1h</div>
+            </div>
+          </li>
+        </ul><br>
+        <div class="row">
+          <div class="col-sm-1">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-2">Sommeil Profond</div>
+          <div class="col-sm-1">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-2">Sommeil léger</div>
+          <div class="col-sm-1">
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-sm-2">Phase de réveil</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <hr />
 </body>
 </html>
